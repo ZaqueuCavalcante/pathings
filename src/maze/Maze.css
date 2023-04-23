@@ -1,0 +1,6 @@
+.Maze {
+  display: grid;
+  grid-template-rows: repeat(var(--rows), var(--cellSize));
+  grid-template-columns: repeat(var(--columns), var(--cellSize));
+  grid-gap: 5px;
+}

@@ -1,0 +1,8 @@
+.Cell {
+  display: grid;
+  background-color: rgb(134, 159, 233);
+  padding: 1rem;
+  justify-items: center;
+  align-items: center;
+  border-radius: 20px;
+}
