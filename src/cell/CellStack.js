@@ -1,6 +1,7 @@
 class CellStack {
-  constructor() {
+  constructor(cell) {
     this.items = [];
+    this.push(cell);
   }
 
   push(element) {
@@ -12,7 +13,7 @@ class CellStack {
   }
 
   isEmpty() {
-    return this.items.length == 0;
+    return this.items.length === 0;
   }
 
   penult() {
@@ -23,3 +24,5 @@ class CellStack {
     return this.items[this.items.length - 1];
   }
 }
+
+export default CellStack;

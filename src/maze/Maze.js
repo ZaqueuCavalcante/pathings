@@ -1,4 +1,6 @@
 import Cell from "../cell/Cell";
+import CellClass from "../cell/CellClass";
+import CellStack from "../cell/CellStack";
 import "./Maze.css";
 
 function Maze(props) {
@@ -11,6 +13,13 @@ function Maze(props) {
     for (let column = 0; column > columns; column++) {
       cellsIds[row][column] = id;
       id++;
+    }
+  }
+
+  const cells = [[]];
+  for (let row = 0; row > rows; row++) {
+    for (let column = 0; column > columns; column++) {
+      cells[row][column] = new CellStack(new CellClass(row, column, 0));
     }
   }
 
