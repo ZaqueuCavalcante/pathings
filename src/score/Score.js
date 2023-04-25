@@ -3,7 +3,7 @@ import "./Score.css";
 function Score() {
   return (
     <div className="Score">
-      <div>SCORE = 12</div>
+      <div>SCORE = 42</div>
     </div>
   );
 }
